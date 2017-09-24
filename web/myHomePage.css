@@ -1,0 +1,40 @@
+a {
+	color: #00FFFF
+}
+
+a:hover {
+	color: #FFA500
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+}
+
+h2 {
+	text-decoration: underline;
+	margin-left: 20px;
+	color: white;
+}
+
+p {
+	margin-left: 40px;
+	color:white;
+}
+
+img {
+	width: 300px;
+	height:400px;
+	margin-left: 20px;
+}
+
+body {
+	background-color: black;
+}
+
+#assignmentsPara {
+	text-align: center;
+	font-size: 65px;
+	vertical-align: middle;
+}
