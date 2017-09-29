@@ -1,0 +1,39 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	text-decoration: underline;
+	text-align: center;
+}
+
+h2 {
+	margin-left: 1em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+#jonesSnowboard {
+	width: 200px;
+	height: 200px;
+}
+
+.product {
+	display: inline-block;
+	width:200px;
+	height:200px;
+	text-align:center;
+	margin: 10px;
+}
+
+#WelcomeText {
+	text-align: center;
+	font-weight: bold;
+}
