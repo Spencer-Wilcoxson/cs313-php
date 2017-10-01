@@ -2,6 +2,7 @@
    Session_Start();
    
    function addItemToCart($item) {
-	   $_SESSION["Items"] = array_push($_SESSION, $item);
+	   $_SESSION[$item->getProductName()] = $item;
+	   echo '<p>$item->name</p>';
    }
 ?>
