@@ -1,4 +1,7 @@
-      <?php
+<html>
+   <head>
+      <title>Welcome</title>
+	        <?php
 	     $dbUrl = getenv('DATABASE_URL');
 		 
 		 $dbopts = parse_url($dbUrl);
@@ -11,9 +14,6 @@
 		 
 		 $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
       ?>  
-<html>
-   <head>
-      <title>Welcome</title>
    </head>
    
    <body>
