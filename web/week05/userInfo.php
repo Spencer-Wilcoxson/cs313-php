@@ -1,9 +1,3 @@
-<html>
-   <head>
-      <title>Welcome</title>
-   </head>
-   
-   <body>
       <?php
 	     $dbUrl = getenv('DATABASE_URL');
 		 
@@ -17,5 +11,12 @@
 		 
 		 $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
       ?>  
+<html>
+   <head>
+      <title>Welcome</title>
+   </head>
+   
+   <body>
+   <p>HELP!!!</p>
    </body>
 </html>
