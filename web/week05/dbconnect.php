@@ -1,12 +1,23 @@
 <?php
-function connect() {
+   $dbUrl = getenv('DATABASE_URL');
+		 
+   $dbopts = parse_url($dbUrl);
+		 
+   $dbHost = $dbopts["host"];
+   $dbPort = $dbopts["port"];
+   $dbUser = $dbopts["user"];
+   $dbPassword = $dbopts["pass"];
+   $dbName = ltrim($dbopts["path"], '/');
    try {
-	   $db = new PDO("pgsql:host=127.0.0.1/cs313-php/web/week05/;dbname=projectX", "postgres", "kdst4977");
-	   echo "<p>Success</p>";
+      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+	  foreach ($db->query('SELECT * FROM users') as $row) {
+		  echo 'User'.$row['username'];
+		  echo '<br />';
+	  }
    }
-   catch (PDOException $e) {
-	   echo "<p>ERROR</p>";
+   
+   catch (PDOException $ex) {
+	   echo 'ERROR!'.$ex->getMessage();
 	   die();
    }
-}
 ?>

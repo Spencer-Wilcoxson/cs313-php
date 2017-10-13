@@ -1,19 +1,13 @@
-<?php
-   $dbUrl = getenv('DATABASE_URL');
-		 
-   $dbopts = parse_url($dbUrl);
-		 
-   $dbHost = $dbopts["host"];
-   $dbPort = $dbopts["port"];
-   $dbUser = $dbopts["user"];
-   $dbPassword = $dbopts["pass"];
-   $dbName = ltrim($dbopts["path"], '/');
-   try {
-      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-   }
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>YESSSSSS!!!!</title>
+   </head>
    
-   catch (PDOException $ex) {
-	   echo 'ERROR!'.$ex->getMessage();
-	   die();
-   }
-?>
+   <?php
+      require 'dbconnect.php';
+   ?>
+   
+   <h2>YESSSSSS!!!!</h2>
+   
+</html>
