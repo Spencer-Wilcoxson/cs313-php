@@ -6,3 +6,9 @@
 	   echo '<p>$item->name</p>';
    }
 ?>
+
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+</html>
