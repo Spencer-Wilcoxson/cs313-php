@@ -28,7 +28,7 @@
 	  
 	  foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
 		  echo 'User: '.$row['username'];
-		  echo '<br /> Password: '.$row['password'];
+		  echo '<br />'.$pass.'<br /';
 		  
 		  $password = $row['password'];
 		  if (pass == password) {
