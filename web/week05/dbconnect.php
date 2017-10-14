@@ -20,4 +20,15 @@
 	   echo 'ERROR!'.$ex->getMessage();
 	   die();
    }
+   
+   function getUser() {
+	   $username = $_POST['username'];
+	   $password = $_POST['password'];
+	   $db = $GLOBALS['db'];
+	   
+	   foreach ($db->query("SELECT * FROM users WHERE username=$username" as $row) {
+		   echo 'Username: '.$row['username'];
+		   echo '<br />';
+	   }
+   }
 ?>
