@@ -30,7 +30,7 @@
 		  if ($pass == $row['password']) {
 			  echo 'User: '.$row['username'];
 			  echo '<br />';
-			  $GLOBALS['userID'] = $row['id'];
+//			  $GLOBALS['userID'] = $row['id'];
 		  }
 		  else {
 			  echo 'Invalid password';
@@ -42,7 +42,7 @@
 	  $db = $GLOBALS['db'];
 	  userID = $GLOBALS['userID'];
 	  
-	  foreach ($db->query('SELECT name, alerttime FROM events WHERE userID = '.userID) as $row) {
+	  foreach ($db->query('SELECT name, alerttime FROM events WHERE userID='.userID) as $row) {
 		  echo $row['name'].' '.$row['alerttime'];
 		  echo '<br />';
 	  }

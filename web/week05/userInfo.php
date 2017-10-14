@@ -7,5 +7,6 @@
    <?php
       require 'dbconnect.php';
 	  getUser()
+//	  getUserEvents();
    ?>
 </html>
