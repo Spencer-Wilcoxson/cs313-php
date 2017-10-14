@@ -31,7 +31,7 @@
 		  echo '<br />'.$pass.'<br /';
 		  
 		  $password = $row['password'];
-		  if (pass == '\''.$row['password'].'\'') {
+		  if (pass === $row['password']) {
 			  echo 'User: '.$row['username'];
 			  echo '<br />';
 		  }
