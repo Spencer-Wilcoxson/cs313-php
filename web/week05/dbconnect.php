@@ -1,4 +1,5 @@
 <?php
+   $userID = null;
    
    $dbUrl = getenv('DATABASE_URL');
 		 
@@ -28,10 +29,21 @@
 		  if ($pass == $row['password']) {
 			  echo 'User: '.$row['username'];
 			  echo '<br />';
+			  $GLOBALS['userID'] = $row['id'];
 		  }
 		  else {
 			  echo 'Invalid password';
 		  }
+	  }
+  }
+  
+  function getUserEventInfo() {
+	  $userID = $GLOBALS['userID'];
+	  $db = $GLOBALS['db'];
+	  
+	  echo '(Name, Alert Time)';
+	  foreach ($db->query('SELECT name, alerttime FROM events WHERE userid = '.$userID) as $row) {
+		  echo $row['name'].', '.$row['alerttime'].'<br />';
 	  }
   }
 ?>
