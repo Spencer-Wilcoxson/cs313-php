@@ -10,10 +10,6 @@
    $dbName = ltrim($dbopts["path"], '/');
    try {
       $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-	  foreach ($db->query('SELECT * FROM users') as $row) {
-		  echo 'User'.$row['username'];
-		  echo '<br />';
-	  }
    }
    
    catch (PDOException $ex) {
@@ -28,10 +24,8 @@
 	  
 	  foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
 		  echo 'User: '.$row['username'];
-		  echo '<br />'.$pass.'<br /';
 		  
-		  $password = $row['password'];
-		  if (pass === $row['password']) {
+		  if ($pass == $row['password']) {
 			  echo 'User: '.$row['username'];
 			  echo '<br />';
 		  }
