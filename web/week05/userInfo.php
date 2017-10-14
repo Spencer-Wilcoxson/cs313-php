@@ -6,7 +6,7 @@
    
    <?php
       require 'dbconnect.php';
-	  getUser();
+//	  getUser();
    ?>
    <h2>YESSSSSS!!!!</h2>
    
