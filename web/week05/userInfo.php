@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>YESSSSSS!!!!</title>
+      <title>User Events</title>
+	  <link rel="stylesheet" type="text/css" href="userInfo.css">
    </head>
    
    <?php
