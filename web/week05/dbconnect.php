@@ -41,7 +41,7 @@
 	  $userID = $GLOBALS['userID'];
 	  $db = $GLOBALS['db'];
 	  
-	  echo '(Name, Alert Time)';
+	  echo '(Name, Alert Time) <br />';
 	  foreach ($db->query('SELECT name, alerttime FROM events WHERE userid = '.$userID) as $row) {
 		  echo $row['name'].', '.$row['alerttime'].'<br />';
 	  }
