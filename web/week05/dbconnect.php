@@ -26,7 +26,7 @@
 	  $pass = $_POST['password'];
 	  $db = $GLOBALS['db'];
 	  
-	  foreach ($db->query('SELECT * FROM users WHERE username='.$user.'') as $row) {
+	  foreach ($db->query('SELECT * FROM users WHERE username='.$user.';') as $row) {
 		  echo 'User: '.$row['username'];
 		  echo '<br />';
 	  }
