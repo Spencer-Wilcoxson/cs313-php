@@ -41,7 +41,7 @@
 	  $userID = $GLOBALS['userID'];
 	  $db = $GLOBALS['db'];
 	  
-	  echo '<table>';
+	  echo '<table border="1">';
 	  echo '<tr>';
 	  echo '<th>Event</th> <th>Alert Time</th>';
 	  echo '</tr>';
