@@ -27,14 +27,9 @@
 	  $db = $GLOBALS['db'];
 	  
 	  foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
-		  if (pass == $row['password]') {
-			  echo 'User: '.$row['username'];
-			  echo '<br />';
-		  }
-		  else {
-			  echo 'Incorrect Password';
-			  echo '<br />';
-		  }
+		  echo 'User: '.$row['username'];
+		  echo '<br /> Password: '.$row['password'];
+		  echo '<br />';
 	  }
   }
 ?>
