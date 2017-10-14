@@ -28,7 +28,7 @@
 	  
 	  echo $user;
 	  
-	  foreach ($db->query("SELECT * FROM users") as $row) {
+	  foreach ($db->query("SELECT * FROM users WHERE username=".$user) as $row) {
 		  echo 'User: '.$row['username'];
 		  echo '<br />';
 	  }
