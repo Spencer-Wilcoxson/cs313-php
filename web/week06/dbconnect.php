@@ -53,4 +53,19 @@
 	  echo '</table>';
 	  
   }
+  
+  function testInput($data) {
+	  $data = trim($data);
+	  $data = stripcslashes($data);
+	  $data = htmlspecialchars($data);
+  }
+  
+  // add an event to the users list of events
+  function addEvent() {
+	  $db = $GLOBALS['db'];
+	  $userID = $GLOBALS['userID'];
+	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
+	  
+	  
+  }
 ?>
