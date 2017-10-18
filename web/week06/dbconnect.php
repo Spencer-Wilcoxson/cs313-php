@@ -64,6 +64,6 @@
  function addEvent() {
 	  $db = $GLOBALS['db'];
 	  $userID = $GLOBALS['userID'];
-	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
+//	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
 	  }
 ?>
