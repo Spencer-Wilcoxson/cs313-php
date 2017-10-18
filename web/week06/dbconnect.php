@@ -65,7 +65,7 @@
 	  $db = $GLOBALS['db'];
 	  $userID = $GLOBALS['userID'];
 	  $sql = 'INSERT INTO events (name, alerttime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', '.$userID.')';
-//	  db->query($sql);
+	  db->query('INSERT INTO events (name, alerttime, userID) VALUES (\'John\', \'2017-11-08\', 2)');
 //	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
 	  }
 ?>
