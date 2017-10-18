@@ -14,7 +14,7 @@
 	  <h1 id="welcome">Welcome <?php getUser(); ?></h1>
 	  <p> Please select what you would like to do below</p>
 	  <div id="options">
-	     <a href="addEvent.php"><input type="button" value="Add Event"></a>
+	     <form action="addEvent.php">"<input type="button" value="Add Event"> </form>
 		 <input type="button" value="Delete Event">
 	  </div>
    </body>
