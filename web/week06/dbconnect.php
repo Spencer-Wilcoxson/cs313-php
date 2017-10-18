@@ -33,7 +33,6 @@
 		  }
 		  else {
 			  echo 'Invalid password';
-			  die();
 		  }
 	  }
   }
