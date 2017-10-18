@@ -61,11 +61,9 @@
   }
   
   // add an event to the users list of events
-//  function addEvent() {
-//	  $db = $GLOBALS['db'];
-//	  $userID = $GLOBALS['userID'];
-//	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
-	  
-	  
-//  }
+ function addEvent() {
+	  $db = $GLOBALS['db'];
+	  $userID = $GLOBALS['userID'];
+	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
+	  }
 ?>
