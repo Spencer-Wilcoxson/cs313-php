@@ -66,6 +66,16 @@
 	  $userID = $GLOBALS['userID'];
 	  $eventName = $_POST['eventName'];
 	  $alerttime = $_POST['alerttime'];
-//	  db->query('INSERT INTO events (name, altertime, userID) VALUES (\''.$_POST['eventName'].'\', \''.$_POST['reminderDate'].'\', \''.$userID.'\')');
+	  
+	  $query = 'INSERT INTO events (name, alerttime, userID) VALUES (:event, :alert, :user)';
+
+	  $statement = db->prepare($query);
+	  
+	  $statement->bindValue(':event', $eventName);
+	  $statement->bindValue(':alert', $alerttime);
+	  $statement->bindValue(':user', $userID);
+	  
+	  statement->execute();
+	  
 	  }
 ?>
