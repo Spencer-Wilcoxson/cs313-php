@@ -69,7 +69,7 @@
 	  
 	  //$query = 'INSERT INTO events (name, alerttime, userID) VALUES (:event, :alert, :user)';
 
-	  $statement = db->prepare($query);
+	  //$statement = db->prepare($query);
 	  
 	  //$statement->bindValue(':event', $eventName);
 	  //$statement->bindValue(':alert', $alerttime);
