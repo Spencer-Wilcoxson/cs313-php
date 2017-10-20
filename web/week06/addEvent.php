@@ -11,7 +11,7 @@
       <h1>Add Event</h1>
 	  <p>Please enter the event information below</p>
 	  
-	  <form method="post" action="<?php echo $_SERVER['php_self'];?>">
+	  <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 	     <input type="text" placeholder="Event Name" name="eventName"> <br />
 		 Event Date: <input type="date" name="eventDate"> <br />
 		 Reminder Date: <input type="date" name="ReminderDate"> <br />
