@@ -63,7 +63,6 @@
   }
   
   function addEvent() {
-	  echo "are you there?";
 	  $db = $GLOBALS['db'];
 	  $userID = $GLOBALS['userID'];
 	  

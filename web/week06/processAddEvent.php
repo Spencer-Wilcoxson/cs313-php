@@ -5,7 +5,9 @@
    header("Location: login.php");
    
    require "dbconnect.php";
+   
+   /* process the form data*/
    addEvent();
-   echo "does this even work?";
+   
    exit;
 ?>
