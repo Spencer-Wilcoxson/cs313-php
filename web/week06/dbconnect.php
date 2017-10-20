@@ -10,6 +10,7 @@
    $dbUser = $dbopts["user"];
    $dbPassword = $dbopts["pass"];
    $dbName = ltrim($dbopts["path"], '/');
+   echo "Are you there 2?";
    try {
       $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
    }
@@ -60,22 +61,7 @@
 	  $data = htmlspecialchars($data);
   }
   
-  // add an event to the users list of events
- function addEvent() {
-	  $db = $GLOBALS['db'];
-	  $userID = $GLOBALS['userID'];
-	  $eventName = $_POST['eventName'];
-	  $alerttime = $_POST['alerttime'];
-	  
-	  //$query = 'INSERT INTO events (name, alerttime, userID) VALUES (:event, :alert, :user)';
-
-	  //$statement = db->prepare($query);
-	  
-	  //$statement->bindValue(':event', $eventName);
-	  //$statement->bindValue(':alert', $alerttime);
-	  //$statement->bindValue(':user', $userID);
-	  
-	  //statement->execute();
-	  
-	  }
+  function addEvent() {
+	  echo "are you there?";
+  }
 ?>
