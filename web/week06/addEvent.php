@@ -22,6 +22,7 @@
 	  <!-- Only run this if the form above has been submitted -->
 	  <?php
 	     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			 echo 'Here we are';
 			 $_POST['eventName'] = test_input($_POST['eventName']);
 			 addEvent();
 		 }

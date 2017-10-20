@@ -65,7 +65,7 @@
 	  $db = $GLOBALS['db'];
 	  $userID = $GLOBALS['userID'];
 	  
-	  $query = "INSERT INTO events (name, alerttime, userid) VALUES ('TestEvent', '2018-08-26', 1)";
+	  $query = "INSERT INTO events (name, alerttime, userid) VALUES ('TestEvent', '2018-08-26', $userID)";
 	  $db->query($query);
   }
 ?>
