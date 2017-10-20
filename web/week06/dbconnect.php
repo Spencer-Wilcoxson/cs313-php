@@ -1,4 +1,6 @@
 <?php
+   session_start();
+
    $userID = null;
    
    $dbUrl = getenv('DATABASE_URL');
