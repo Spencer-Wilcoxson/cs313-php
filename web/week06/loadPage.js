@@ -5,3 +5,7 @@ function addEventPage() {
 function testEvent() {
 	window.alert("A button has been clicked");
 }
+
+function viewEventsPage() {
+	document.location = 'viewEvents.php';
+}

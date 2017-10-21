@@ -40,8 +40,8 @@
 	  }
   }
   
-  function getUserEventInfo() {
-	  $userID = $GLOBALS['userID'];
+  function getUserEvents() {
+	  $userID = $SESSION["userID"];
 	  $db = $GLOBALS['db'];
 	  
 	  echo '<table border="1">';

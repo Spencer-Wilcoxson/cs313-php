@@ -20,6 +20,6 @@
 	  <div id="options">
 	     <input type="button" value="Add Event" onclick="addEventPage()">
 		 <input type="button" value="Delete Event">
-	  </div>
+		 <input type="button" value="View Event" onclick="viewEventsPage()">
    </body>
 </html>
