@@ -17,3 +17,7 @@ function userLogin() {
 function deleteEventPage() {
 	document.location = 'deleteEvent.php';
 }
+
+function changeEventPage() {
+	document.location = 'changeEvent.php';
+}

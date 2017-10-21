@@ -12,8 +12,8 @@
 	   deleteEventData();
    }
    
-   else {
-	   
+   elseif ($_POST['whatPage'] == 'changeEvent') {
+	   changeEventData();
    }
    
    /* redirect to the login screen */
@@ -45,5 +45,17 @@
 	   $_SESSION['eventName'] = $_POST['eventName'];
 	   $_SESSION['reminderDate'] = $_POST['reminderDate'];
 	   deleteEvent();
+   }
+   
+   /*
+   * Update an existing event
+   */   
+   function changeEventData() {
+	   $_SESSION['oldEventName'] = $_POST['oldEventName'];
+	   $_SESSION['newEventName'] = $_POST['newEventName'];
+	   $_SESSION['oldEventDate'] = $_POST['oldEventDate'];
+	   $_SESSION['newEventName'] = $_POST['newEventDate'];
+	   $_SESSION['oldReminderDate'] = $_POST['oldReminderDate'];
+	   $_SESSION['newReminderDate'] = $_POST['newReminderDate'];
    }
 ?>
