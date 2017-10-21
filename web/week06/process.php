@@ -43,7 +43,7 @@
    */
    function deleteEventData() {
 	   _$SESSION['eventName'] = $_POST['eventName'];
-	   $_SESSION['evetnDate'] = $_POST['eventDate'];
+	   $_SESSION['eventDate'] = $_POST['eventDate'];
 	   deleteEvent();
    }
 ?>
