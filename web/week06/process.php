@@ -42,8 +42,8 @@
    * Delete an event from the users database of events
    */
    function deleteEventData() {
-	   _$SESSION['eventName'] = $_POST['eventName'];
-	   $_SESSION['eventDate'] = $_POST['eventDate'];
-	   deleteEvent();
+	   $_SESSION['eventName'] = $_POST['eventName'];
+	   $_SESSION['reminderDate'] = $_POST['reminderDate'];
+	 //  deleteEvent();
    }
 ?>
