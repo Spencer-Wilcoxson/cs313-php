@@ -85,6 +85,6 @@
 	  
 	  $query = "DELETE FROM events WHERE name = '$eventName' AND eventDate = '$eventDate'";
 	  
-	  db->query($query);
+	  $db->query($query);
   }
 ?>
