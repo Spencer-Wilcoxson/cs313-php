@@ -82,9 +82,7 @@
 	  $eventName = $_SESSION['eventName'];
 	  $reminderDate = $_SESSION['reminderDate'];
 	  $db = $GLOBALS['db'];
-	  
-	  $query = "DELETE FROM events WHERE name = '$eventName'";
-	  
+	  $query = "DELETE FROM events WHERE name = '$eventName' AND alerttime = '$reminderDate'";
 	  $db->query($query);
   }
 ?>
