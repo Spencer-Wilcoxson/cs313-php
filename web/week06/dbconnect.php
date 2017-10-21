@@ -24,11 +24,7 @@
    }
    
   function getUser() {
-	  $db = $GLOBALS['db'];
-	  
-	  // check to see if the user is already to login
-	  if (!$GLOBALS['isLoggedIn'])
-	  {
+	  $db = $GLOBALS['db'];	  
 		$user = $_POST['username'];
 		$pass = $_POST['password'];
 	  
@@ -46,13 +42,6 @@
 				$GLOBALS['isLoggedIn'] = false;
 			}
 		}
-	}
-	
-	else {
-		foreach ($db->query("SELECT * FROM users WHERE id = $_SESSION['userID']") as $row) {
-			echo $row['username'];
-		}
-	}
   }
   
   function getUserEvents() {
