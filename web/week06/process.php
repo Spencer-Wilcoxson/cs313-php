@@ -44,6 +44,6 @@
    function deleteEventData() {
 	   $_SESSION['eventName'] = $_POST['eventName'];
 	   $_SESSION['reminderDate'] = $_POST['reminderDate'];
-	 //  deleteEvent();
+	   deleteEvent();
    }
 ?>
