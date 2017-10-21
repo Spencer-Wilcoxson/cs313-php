@@ -3,6 +3,16 @@
 
    require "dbconnect.php";
    
+   // get the data from the form and post it to the session
+   $eventName = $_POST['eventName'];
+   $eventDate = $_POST['eventDate'];
+   $reminderDate = $_POST['reminderDate'];
+   
+   $_SESSION["eventName"] = $eventName;
+   $_SESSION["eventDate"] = $eventDate;
+   $_SESSION["reminderDate"] = $reminderDate;
+   
+   
    /* process the form data*/
    addEvent();
    

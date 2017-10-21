@@ -17,7 +17,7 @@
 	  <form method="post" action="processAddEvent.php">
 	     <input type="text" placeholder="Event Name" name="eventName"> <br />
 		 Event Date: <input type="date" name="eventDate"> <br />
-		 Reminder Date: <input type="date" name="ReminderDate"> <br />
+		 Reminder Date: <input type="date" name="reminderDate"> <br />
 		 <input type="submit" value="submit">
 	  </form>
    </body>
