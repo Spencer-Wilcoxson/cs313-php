@@ -80,11 +80,11 @@
   
   function deleteEvent() {
 	  $eventName = $_SESSION['eventName'];
-	  $eventDate = $_SESSION['eventDate'];
+	  $reminderDate = $_SESSION['reminderDate'];
 	  $db = $GLOBALS['db'];
 	  
-	 // $query = "DELETE FROM events WHERE name = '$eventName' AND eventDate = '$eventDate'";
+	  $query = "DELETE FROM events WHERE name = '$eventName' AND eventDate = '$reminderDate'";
 	  
-	 // $db->query($query);
+	  $db->query($query);
   }
 ?>
