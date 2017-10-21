@@ -32,6 +32,7 @@
 			  echo $row['username'];
 			  echo '<br />';
 			  $GLOBALS['userID'] = $row['id'];
+			  $_SESSION["userID"] = $row['id'];
 		  }
 		  else {
 			  echo 'Invalid password';
@@ -64,7 +65,7 @@
   
   function addEvent() {
 	  $db = $GLOBALS['db'];
-	  $userID = $GLOBALS['userID'];
+	  $userID = $_SESSION["userID"];
 	  
 	  $eventName = $_SESSION["eventName"];
 	  $eventDate = $_SESSION["eventDate"];
