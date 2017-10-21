@@ -100,4 +100,5 @@
 	  
 	  $query = "UPDATE events SET name = '$newEventName', alerttime = '$newReminderDate' WHERE name = '$oldEventName' AND alerttime = '$oldReminderDate'";
 	  $db->query($query);
+  }
 ?>
