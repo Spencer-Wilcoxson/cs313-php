@@ -9,7 +9,7 @@
    
 
    elseif ($_POST['whatPage'] == 'deleteEvent') {
-	   /**/
+	   deleteEventData();
    }
    
    else {
@@ -41,9 +41,9 @@
    /*
    * Delete an event from the users database of events
    */
-//   function deleteEventData() {
-//	   _$SESSION['eventName'] = $_POST['eventName'];
-//	   $_SESSION['evetnDate'] = $_POST['eventDate'];
-//	   deleteEvent();
- //  }
+   function deleteEventData() {
+	   _$SESSION['eventName'] = $_POST['eventName'];
+	   $_SESSION['evetnDate'] = $_POST['eventDate'];
+	   deleteEvent();
+   }
 ?>
