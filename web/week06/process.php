@@ -7,9 +7,9 @@
 	   addEventData();
    }
    
-   else if ($_POST['whatPage'] == 'deleteEvent') {
-	   deleteEventData();
-   }
+ //  else if ($_POST['whatPage'] == 'deleteEvent') {
+//	   deleteEventData();
+ //  }
    
    /* redirect to the login screen */
    header("Location: login.php");
@@ -36,9 +36,9 @@
    /*
    * Delete an event from the users database of events
    */
-   function deleteEventData() {
-	   _$SESSION['eventName'] = $_POST['eventName'];
-	   $_SESSION['evetnDate'] = $_POST['eventDate'];
-	   deleteEvent();
-   }
+//   function deleteEventData() {
+//	   _$SESSION['eventName'] = $_POST['eventName'];
+//	   $_SESSION['evetnDate'] = $_POST['eventDate'];
+//	   deleteEvent();
+ //  }
 ?>
