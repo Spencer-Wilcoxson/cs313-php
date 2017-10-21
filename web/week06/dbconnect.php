@@ -27,7 +27,7 @@
 	   $db = $GLOBALS['db'];
 	   
 	   // check to see if the database has already been connected
-	   if (!$db) {
+	   if ($db == null) {
 		   $dbUrl = getenv('DATABASE_URL');
 		 
 		   $dbopts = parse_url($dbUrl);
