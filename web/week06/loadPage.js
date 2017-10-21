@@ -1,4 +1,4 @@
-function addEvent() {
+function addEventPage() {
 	document.location = 'addEvent.php';
 }
 
