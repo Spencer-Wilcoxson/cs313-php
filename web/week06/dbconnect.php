@@ -3,7 +3,7 @@
    $db = null;
    $isLoggedIn = false;
 
-//   $userID = null;
+   $userID = null;
    
    $dbUrl = getenv('DATABASE_URL');
 		 
@@ -37,7 +37,7 @@
 			if ($pass == $row['password']) {
 				echo $row['username'];
 				echo '<br />';
-//			  	$GLOBALS['userID'] = $row['id'];
+			  	$GLOBALS['userID'] = $row['id'];
 				$_SESSION["userID"] = $row['id'];
 				$GLOBALS['isLoggedIn'] = true;
 			}
