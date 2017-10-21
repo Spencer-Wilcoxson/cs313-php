@@ -8,8 +8,12 @@
    }
    
 
-   if ($_POST['whatPage'] == 'deleteEvent') {
-	   /*/
+   elseif ($_POST['whatPage'] == 'deleteEvent') {
+	   /**/
+   }
+   
+   else {
+	   
    }
    
    /* redirect to the login screen */
