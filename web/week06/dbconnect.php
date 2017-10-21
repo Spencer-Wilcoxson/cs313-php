@@ -25,24 +25,23 @@
    
   function getUser() {
 	  $db = $GLOBALS['db'];	  
-		$user = $_POST['username'];
-		$pass = $_POST['password'];
+	  $user = $_POST['username'];
+	  $pass = $_POST['password'];
 	  
-		foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
+	  foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
 		  
-			if ($pass == $row['password']) {
-				echo $row['username'];
-				echo '<br />';
-			  	$GLOBALS['userID'] = $row['id'];
-				$_SESSION["userID"] = $row['id'];
-				$GLOBALS['isLoggedIn'] = true;
-			}
-			else {
-				echo 'Invalid password';
-				$GLOBALS['isLoggedIn'] = false;
-			}
-		}
-  }
+		  if ($pass == $row['password']) {
+			echo $row['username'];
+			echo '<br />';
+			$GLOBALS['userID'] = $row['id'];
+			$_SESSION["userID"] = $row['id'];
+		  }
+		  else {
+			echo 'Invalid password';
+			$GLOBALS['isLoggedIn'] = false;
+		  }
+	  }
+ }
   
   function getUserEvents() {
 	  $userID = $_SESSION["userID"];
@@ -77,5 +76,8 @@
 	  
 	  $query = "INSERT INTO events (name, alerttime, userid) VALUES ('$eventName', '$eventDate', $userID)";
 	  $db->query($query);
+  }
+  
+  function deleteEvent($event) {  
   }
 ?>
