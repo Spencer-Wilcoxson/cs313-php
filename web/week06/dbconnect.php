@@ -74,10 +74,17 @@
 	  $eventDate = $_SESSION["eventDate"];
 	  $reminderDate = $_SESSION["reminderDate"];
 	  
-	  $query = "INSERT INTO events (name, alerttime, userid) VALUES ('$eventName', '$eventDate', $userID)";
+	  $query = "INSERT INTO events (name, alerttime, userid) VALUES ('$eventName', '$reminderDate', $userID)";
 	  $db->query($query);
   }
   
-  function deleteEvent($event) {  
+  function deleteEvent() {
+	  $eventName = $_SESSION['eventName'];
+	  $eventDate = $_SESSION['eventDate'];
+	  $db = $GLOBALS['db'];
+	  
+	  $query = "DELETE FROM events WHERE name = $eventName AND eventDate = $eventDate";
+	  
+	  db->query($query);
   }
 ?>

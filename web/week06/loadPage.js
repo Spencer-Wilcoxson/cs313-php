@@ -13,3 +13,7 @@ function viewEventsPage() {
 function userLogin() {
 	document.location = 'login.php';
 }
+
+function deleteEventPage() {
+	document.location = 'deleteEvent.php';
+}

@@ -19,7 +19,7 @@
 	  <p> Please select what you would like to do below</p>
 	  <div id="options">
 	     <input type="button" value="Add Event" onclick="addEventPage()">
-		 <input type="button" value="Delete Event">
+		 <input type="button" value="Delete Event" onclick="deleteEventPage()">
 		 <input type="button" value="View Event" onclick="viewEventsPage()">
    </body>
 </html>
