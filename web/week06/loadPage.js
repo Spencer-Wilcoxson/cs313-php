@@ -9,3 +9,7 @@ function testEvent() {
 function viewEventsPage() {
 	document.location = 'viewEvents.php';
 }
+
+function userLogin() {
+	document.location = 'login.php';
+}
