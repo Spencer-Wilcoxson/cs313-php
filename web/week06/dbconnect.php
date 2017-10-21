@@ -26,26 +26,26 @@
    function connectDB() {
 	   $db = $GLOBALS['db'];
 	   
-	   // check to see if the database has already been connected
-	   if ($db == null) {
-		   $dbUrl = getenv('DATABASE_URL');
-		 
-		   $dbopts = parse_url($dbUrl);
-		 
-           $dbHost = $dbopts["host"];
-           $dbPort = $dbopts["port"];
-           $dbUser = $dbopts["user"];
-           $dbPassword = $dbopts["pass"];
-           $dbName = ltrim($dbopts["path"], '/');
-           try {
-              $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-			  $GLOBALS['db'] = $db;
-           }
-   
-           catch (PDOException $ex) {
-	       echo 'ERROR!'.$ex->getMessage();
-	       die();
-        }   
+	   // check to see if your logged in or not
+	   if (!$isLoggedIn) {
+		   $dburl = getenv('DATABASE_URL');
+		   
+		   $dbopts = parse_url($dburl);
+		   $dbHost = $dbopts["host"];
+		   $dbPort = $dbopts["port"];
+		   $dbUser = $dbopts["user"];
+		   $dbPass = $dbopts["pass"];
+		   $dbName = ltrim($dbopts["path"], '/');
+		   
+		   try {
+			   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			   $GLOBALS['db'] = $db;
+		   }
+		   
+		   catch (PDOException $ex) {
+			   echo 'ERROR'.$ex->getMessage();
+			   die();
+		   }
 	   }
    }
    
