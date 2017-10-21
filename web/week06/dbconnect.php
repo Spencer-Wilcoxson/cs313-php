@@ -25,6 +25,7 @@
    
    function connectDB() {
 	   $db = $GLOBALS['db'];
+	   $isLoggedIn = $GLOBALS['isLoggedIn'];
 	   
 	   // check to see if your logged in or not
 	   if (!$isLoggedIn) {
@@ -40,6 +41,8 @@
 		   try {
 			   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 			   $GLOBALS['db'] = $db;
+			   $isLoggedIn = true;
+			   $GLOBALS['isLoggedIn'] = $isLoggedIn;
 		   }
 		   
 		   catch (PDOException $ex) {
