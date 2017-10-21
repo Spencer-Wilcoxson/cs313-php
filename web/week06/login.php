@@ -12,6 +12,7 @@
    <body>
       <?php
 	     require 'dbconnect.php';
+		 connectDB();
 		 
 	  ?>
 	  

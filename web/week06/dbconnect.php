@@ -1,43 +1,84 @@
 <?php
    session_start();
+   $db;
+   $isLoggedIn;
 
-   $userID = null;
+//   $userID = null;
    
-   $dbUrl = getenv('DATABASE_URL');
+//   $dbUrl = getenv('DATABASE_URL');
 		 
-   $dbopts = parse_url($dbUrl);
+//   $dbopts = parse_url($dbUrl);
 		 
-   $dbHost = $dbopts["host"];
-   $dbPort = $dbopts["port"];
-   $dbUser = $dbopts["user"];
-   $dbPassword = $dbopts["pass"];
-   $dbName = ltrim($dbopts["path"], '/');
-   try {
-      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-   }
+//   $dbHost = $dbopts["host"];
+//   $dbPort = $dbopts["port"];
+//   $dbUser = $dbopts["user"];
+//   $dbPassword = $dbopts["pass"];
+//   $dbName = ltrim($dbopts["path"], '/');
+//   try {
+//      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+//   }
    
-   catch (PDOException $ex) {
-	   echo 'ERROR!'.$ex->getMessage();
-	   die();
+//   catch (PDOException $ex) {
+//	   echo 'ERROR!'.$ex->getMessage();
+//	   die();
+//   }
+   
+   function connectDB() {
+	   $db = $GLOBALS['db'];
+	   
+	   // check to see if the database has already been connected
+	   if (!$db) {
+		   $dbUrl = getenv('DATABASE_URL');
+		 
+		   $dbopts = parse_url($dbUrl);
+		 
+           $dbHost = $dbopts["host"];
+           $dbPort = $dbopts["port"];
+           $dbUser = $dbopts["user"];
+           $dbPassword = $dbopts["pass"];
+           $dbName = ltrim($dbopts["path"], '/');
+           try {
+              $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+			  $GLOBALS['db'] = $db;
+           }
+   
+           catch (PDOException $ex) {
+	       echo 'ERROR!'.$ex->getMessage();
+	       die();
+        }   
+	   }
    }
    
   function getUser() {
-	  $user = $_POST['username'];
-	  $pass = $_POST['password'];
 	  $db = $GLOBALS['db'];
 	  
-	  foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
+	  // check to see if the user is already to login
+	  if (!$GLOBALS['isLoggedIn'])
+	  {
+		$user = $_POST['username'];
+		$pass = $_POST['password'];
+	  
+		foreach ($db->query('SELECT * FROM users WHERE username=\''.$user.'\'') as $row) {
 		  
-		  if ($pass == $row['password']) {
-			  echo $row['username'];
-			  echo '<br />';
-			  $GLOBALS['userID'] = $row['id'];
-			  $_SESSION["userID"] = $row['id'];
-		  }
-		  else {
-			  echo 'Invalid password';
-		  }
-	  }
+			if ($pass == $row['password']) {
+				echo $row['username'];
+				echo '<br />';
+//			  	$GLOBALS['userID'] = $row['id'];
+				$_SESSION["userID"] = $row['id'];
+				$GLOBALS['isLoggedIn'] = true;
+			}
+			else {
+				echo 'Invalid password';
+				$GLOBALS['isLoggedIn'] = false;
+			}
+		}
+	}
+	
+	else {
+		foreach ($db->query("SELECT * FROM users WHERE id = $_SESSION['userID']") as $row) {
+			echo $row['username'];
+		}
+	}
   }
   
   function getUserEvents() {
