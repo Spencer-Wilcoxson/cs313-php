@@ -7,7 +7,7 @@
 	   addEventData();
    }
    
-   else if ($_POST['whatPage'] == 'deleteEvent') {
+   if ($_POST['whatPage'] == 'deleteEvent') {
 	   deleteEventData();
    }
    

@@ -15,7 +15,7 @@
 	     <input type="text" name="eventName" placeholder="Event Name">
 		 <input type="date" name="eventDate" placeholder="Event Date" >
 		 <input type="hidden" name="whatPage" value="deleteEvent">
-		 <input type="submit">
+		 <input type="submit" value="submit">
 	  </form>
    </body>
 </html>
