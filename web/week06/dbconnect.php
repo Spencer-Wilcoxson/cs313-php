@@ -41,7 +41,7 @@
   }
   
   function getUserEvents() {
-	  $userID = $SESSION["userID"];
+	  $userID = $_SESSION["userID"];
 	  $db = $GLOBALS['db'];
 	  
 	  echo '<table border="1">';
