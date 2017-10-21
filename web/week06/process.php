@@ -57,5 +57,7 @@
 	   $_SESSION['newEventName'] = $_POST['newEventDate'];
 	   $_SESSION['oldReminderDate'] = $_POST['oldReminderDate'];
 	   $_SESSION['newReminderDate'] = $_POST['newReminderDate'];
+	   
+	   updateEvent();
    }
 ?>

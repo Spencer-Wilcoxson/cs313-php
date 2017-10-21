@@ -87,4 +87,17 @@
 	  $query = "DELETE FROM events WHERE name = '$eventName' AND alerttime = '$reminderDate' AND userid = $userID";
 	  $db->query($query);
   }
+  
+  function updateEvent() {
+	  $oldEventName = $_SESSION['oldEventName'];
+	  $newEventName = $_SESSION['newEventName'];
+	  $oldEventDate = $_SESSION['oldEventDate'];
+	  $newEventDate = $_SESSION['newEventDate'];
+	  $oldReminderDate = $_SESSION['oldReminderDate'];
+	  $newReminderDate = $_SESSION['newReminderDate'];
+	  
+	  $db = $GLOBALS['db'];
+	  
+	  $query = "UPDATE events SET name = '$newEventName', alerttime = '$newReminderDate' WHERE name = '$oldEventName' AND alerttime = '$oldReminderDate'";
+	  $db->query($query);
 ?>

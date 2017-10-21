@@ -19,5 +19,5 @@ function deleteEventPage() {
 }
 
 function changeEventPage() {
-	document.location = 'changeEvent.php';
+	document.location = 'changeEventPage.php';
 }
