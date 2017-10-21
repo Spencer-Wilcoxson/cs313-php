@@ -7,9 +7,10 @@
 	   addEventData();
    }
    
- //  else if ($_POST['whatPage'] == 'deleteEvent') {
-//	   deleteEventData();
- //  }
+
+   if ($_POST['whatPage'] == 'deleteEvent') {
+	   /*/
+   }
    
    /* redirect to the login screen */
    header("Location: login.php");
