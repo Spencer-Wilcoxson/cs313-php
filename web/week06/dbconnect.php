@@ -1,7 +1,7 @@
 <?php
    session_start();
-   $db;
-   $isLoggedIn;
+   $db = null;
+   $isLoggedIn = false;
 
 //   $userID = null;
    
