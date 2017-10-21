@@ -53,10 +53,8 @@
    function changeEventData() {
 	   $_SESSION['oldEventName'] = $_POST['oldEventName'];
 	   $_SESSION['newEventName'] = $_POST['newEventName'];
-	   $_SESSION['oldEventDate'] = $_POST['oldEventDate'];
-	   $_SESSION['newEventName'] = $_POST['newEventDate'];
-	   $_SESSION['oldReminderDate'] = $_POST['oldReminderDate'];
-	   $_SESSION['newReminderDate'] = $_POST['newReminderDate'];
+	   $_SESSION['oldReminderTime'] = $_POST['oldReminderTime'];
+	   $_SESSION['newReminderTime'] = $_POST['newReminderTime'];
 	   
 	   updateEvent();
    }

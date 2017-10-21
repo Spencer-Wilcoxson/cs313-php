@@ -91,14 +91,12 @@
   function updateEvent() {
 	  $oldEventName = $_SESSION['oldEventName'];
 	  $newEventName = $_SESSION['newEventName'];
-	  $oldEventDate = $_SESSION['oldEventDate'];
-	  $newEventDate = $_SESSION['newEventDate'];
-	  $oldReminderDate = $_SESSION['oldReminderDate'];
-	  $newReminderDate = $_SESSION['newReminderDate'];
+	  $oldReminderTime = $_SESSION['oldReminderTime'];
+	  $newReminderTime = $_SESSION['newReminderTime'];
 	  
 	  $db = $GLOBALS['db'];
 	  
-	  $query = "UPDATE events SET name = '$newEventName', alerttime = '$newReminderDate' WHERE name = '$oldEventName' AND alerttime = '$oldReminderDate'";
+	  $query = "UPDATE events name='$newEventName', alerttime='$newReminderTime' WHERE name='$oldEventName' AND alerttime='$oldReminderTime'";
 	  $db->query($query);
   }
 ?>
