@@ -11,7 +11,7 @@
 	     <input type="text" name="oldEventName" placeholder="Old Name of Event"> <br />
 		 <input type="text" name="newEventName" placeholder="New Event Name"> <br />
 		 Old Event Date: <input type="date" name="oldEventDate"> <br />
-		 New Event Date: <input type="date" name="newEventate"> <br />
+		 New Event Date: <input type="date" name="newEventDate"> <br />
 		 Old Reminder Date: <input type="date" name="oldReminderDate"> <br />
 		 New Reminder Date: <input type="date" name="newReminderDate"> <br />
 		 <input type="hidden" name="whatPage" value="changeEvent">
