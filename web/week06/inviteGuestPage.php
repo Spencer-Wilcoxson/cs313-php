@@ -29,11 +29,12 @@
 			 echo '<tr>';
 			 echo '<td>'.$row['lastname'].'</td>';
 			 echo '<td>'.$row['firstname'].'</td>';
-			 echo '<td><input type="checkbox"></td>';
+			 echo '<td><input type="checkbox" class="inviteCheck"></td>';
 			 echo '</tr>';
 		 }
-		 
 		 echo '</table>';
 	  ?>
+	  
+	  <input type="button" value="Invite Guests">
    </body>
 </html>
