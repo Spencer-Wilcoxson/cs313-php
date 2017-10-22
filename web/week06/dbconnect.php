@@ -96,7 +96,7 @@
 	  
 	  $db = $GLOBALS['db'];
 	  
-	  $query = "UPDATE events SET name='$newEventName', alerttime='$newReminderTime' WHERE name='$oldEventName' AND alerttime='$oldReminderTime'";
+	  $query = "UPDATE events SET name = '$newEventName', alerttime = '$newReminderTime' WHERE name = '$oldEventName' AND alerttime = '$oldReminderTime'";
 	  $db->query($query);
   }
 ?>
