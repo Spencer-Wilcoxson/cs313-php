@@ -107,7 +107,7 @@
 	  echo '<table border="1">';
 	  echo '<tr>';
 	  echo '<th>Last Name</th>';
-	  echo '<th>First Name</th>'
+	  echo '<th>First Name</th>';
 	  echo '<th>Event Name</th>';
 	  echo '</tr>';
 	  echo '</table>';
