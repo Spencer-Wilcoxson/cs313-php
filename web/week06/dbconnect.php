@@ -102,7 +102,7 @@
   
   function getGuestList() {
 	  $db = $GLOBALS['db'];
-	  $userID = _SESSION['userID'];
+	  $userID = $_SESSION['userID'];
 	  
 	  echo '<table border="1">';
 //	  echo '<tr>';
