@@ -104,12 +104,13 @@
 	  $db = $GLOBALS['db'];
 	  $userID = _SESSION['userID'];
 	  
-//	  echo '<table border="1">';
-//	  echo '<tr>';
-//	  echo '<th>Last Name</th>';
-//	  echo '<th>First Name</th>'
-//	  echo '<th>Event Name</th>';
-//	  echo '</tr>';
+	  echo '<table border="1">';
+	  echo '<tr>';
+	  echo '<th>Last Name</th>';
+	  echo '<th>First Name</th>'
+	  echo '<th>Event Name</th>';
+	  echo '</tr>';
+	  echo '</table>';
 	  
 //	  $query = "SELECT guestlist.lastname, guestlist.firstname, events.name AS EventName FROM ((junction INNER JOIN guestlist ON junction.guestid = guestlist.id) INNER JOIN events ON junction.eventsid = events.id)";
 //	  foreach ($db->query($query) as $row) {
