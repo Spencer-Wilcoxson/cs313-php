@@ -112,7 +112,7 @@
 	  echo '</tr>';
 //	  echo '</table>';
 	  
-	  $query = "SELECT guestlist.lastname, guestlist.firstname, events.name FROM ((junction INNER JOIN guestlist ON junction.guestid = guestlist.id) INNER JOIN events ON junction.eventsid = events.id)";
+	  $query = "SELECT guestlist.lastname, guestlist.firstname, events.name FROM ((junction INNER JOIN guestlist ON junction.guestid = guestlist.id) INNER JOIN events ON junction.eventsid = events.id) WHERE junction.userid = $userID";
 	  foreach ($db->query($query) as $row) {
 		  echo '<tr>';
 		  echo '<td>'.$row['lastname'].'</td>';
