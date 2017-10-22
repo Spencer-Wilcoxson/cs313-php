@@ -112,13 +112,13 @@
 	  echo '</tr>';
 	  
 	  $query = "SELECT guestlist.lastname, guestlist.firstname, events.name AS EventName FROM ((junction INNER JOIN guestlist ON junction.guestid = guestlist.id) INNER JOIN events ON junction.eventsid = events.id)";
-	  foreach ($db->query($query) as $row) {
-		  echo '<tr>';
-		  echo '<td>'.$row['lastname'].'</td>';
-		  echo '<td>'.$row['firstname'].'</td>';
-		  echo '<td>'.$row['EventName'].'</td>';
-		  echo '</tr>';
-	  }
+//	  foreach ($db->query($query) as $row) {
+//		  echo '<tr>';
+//		  echo '<td>'.$row['lastname'].'</td>';
+//		  echo '<td>'.$row['firstname'].'</td>';
+//		  echo '<td>'.$row['EventName'].'</td>';
+//		  echo '</tr>';
+//	  }
 	  echo '</table>';
   }
 ?>
