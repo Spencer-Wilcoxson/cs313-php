@@ -21,3 +21,7 @@ function deleteEventPage() {
 function changeEventPage() {
 	document.location = 'changeEventPage.php';
 }
+
+function changeGuestPage() {
+	document.location = 'guestsPage.php';
+}
