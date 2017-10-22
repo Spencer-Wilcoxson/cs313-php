@@ -25,3 +25,7 @@ function changeEventPage() {
 function changeGuestPage() {
 	document.location = 'guestsPage.php';
 }
+
+function inviteGuestPage() {
+	document.location = 'inviteGuestPage.php';
+}

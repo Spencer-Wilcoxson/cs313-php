@@ -22,6 +22,6 @@
 		 <input type="button" value="Delete Event" onclick="deleteEventPage()">
 		 <input type="button" value="View Event" onclick="viewEventsPage()">
 		 <input type="button" value="Update Event" onclick="changeEventPage()">
-		 <input type="button" value="Add Guests" onclick="changeGuestPage()">
+		 <input type="button" value="Guests Page" onclick="changeGuestPage()">
    </body>
 </html>

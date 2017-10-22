@@ -5,6 +5,7 @@
 <html>
    <head>
       <title>Guest Information</title>
+	  <script src="loadPage.js"></script>
    </head>
    
    <h1>Guest List</h1>
@@ -12,8 +13,9 @@
       <?php
 	     require 'dbconnect.php';
 		 getGuestList();
-		 
-		 
 	  ?>
+	  
+	  <input type="button" value="Invite Guests" onclick="inviteGuestPage()">
+	  <input type="button" value="back" onclick="userlogin.php()">
    </div>
 </html>
