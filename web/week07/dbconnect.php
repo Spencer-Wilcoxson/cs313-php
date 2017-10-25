@@ -128,4 +128,11 @@
 	  }
 	  echo '</table>';
   }
+  
+  function insertUser($username, $pass) {
+	  $db = $GLOBALS['db'];
+	  
+	  $query = "INSERT INTO users (username, password) VALUES ($username, $pass)";
+	  $db->query($query);
+  }
 ?>

@@ -29,4 +29,11 @@
 		// push a new guest object anot the array
 		array_push($a, new guest("$row['lastname']", "$row['firstname']", $row['number'], "$row['email']" ));
 	}
+	
+	/*
+	* convert to json
+	*/
+	$objectArray = json_encode($a);
+	
+	echo $objectArray;
 ?>

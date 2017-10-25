@@ -17,6 +17,10 @@
 	   changeEventData();
    }
    
+   elseif ($_POST['whatPage'] == 'signup') {
+	   addUser();
+   }
+   
    /* redirect to the login screen */
    header("Location: login.php");
    exit;
@@ -58,5 +62,9 @@
 	   $_SESSION['newReminderTime'] = $_POST['newReminderTime'];
 	   
 	   updateEvent();
+   }
+   
+   function addUser() {
+	   InsertUser($_POST['userName'], $_POST['pass']);
    }
 ?>
