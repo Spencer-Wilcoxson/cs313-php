@@ -2,7 +2,7 @@
    session_start();
 
    require "dbconnect.php";
-   connect();
+//   connect();
    
    // get the data from the form and post it to the session
    $eventName = $_POST['eventName'];
