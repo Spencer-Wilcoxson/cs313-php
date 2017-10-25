@@ -9,7 +9,8 @@
    
    <body>
       <?php
-         require "dbconnect.php";	  
+         require "dbconnect.php";
+		 connect();
 	  ?>
       <h1>Add Event</h1>
 	  <p>Please enter the event information below</p>
