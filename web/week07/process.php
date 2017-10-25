@@ -65,6 +65,6 @@
    }
    
    function addUser() {
-	   InsertUser($_POST['userName'], $_POST['pass']);
+	   insertUser($_POST['userName'], $_POST['pass']);
    }
 ?>
