@@ -15,7 +15,7 @@
    
    
    /* process the form data*/
-   addEvent();
+//   addEvent();
    
    /* redirect to the login screen */
    header("Location: login.php");
