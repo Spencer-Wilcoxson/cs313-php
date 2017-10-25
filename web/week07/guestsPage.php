@@ -12,6 +12,7 @@
    <div id="guestList">
       <?php
 	     require 'dbconnect.php';
+		 connect();
 		 getGuestList();
 	  ?>
 	  

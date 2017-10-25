@@ -12,7 +12,8 @@
    <body>
       <h1>Events</h1>
 	  <?php
-	     require 'dbconnect.php';		 
+	     require 'dbconnect.php';
+		 connect();
 		 getUserEvents();
 	  ?>
 	  
