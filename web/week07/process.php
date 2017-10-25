@@ -2,6 +2,7 @@
    session_start();
 
    require "dbconnect.php";
+   connect();
    
    if ($_POST['whatPage'] == 'addEvent') {
 	   addEventData();
