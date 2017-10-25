@@ -12,28 +12,29 @@
 	  <p>Select Guests below to add to the guest list for an event, or add a new guest below</p>
 	  
 	  <?php
-	     require 'dbconnect.php';
-		 connect();
+	     require 'getListGuest.php';
+//	     require 'dbconnect.php';
+//		 connect();
 		 
-		 $db = $GLOBALS['db'];
-	     $userID = $_SESSION['userID'];
+//		 $db = $GLOBALS['db'];
+//	     $userID = $_SESSION['userID'];
 	  
-	     echo '<table>';
-	     echo '<tr>';
-	     echo '<th>Last Name</th>';
-	     echo '<th>First Name</th>';
-	     echo '<th>Invite</th>';
-	     echo '</tr>';
+//	     echo '<table>';
+//	     echo '<tr>';
+//	     echo '<th>Last Name</th>';
+//	     echo '<th>First Name</th>';
+//	     echo '<th>Invite</th>';
+//	     echo '</tr>';
 		 
-		 $query = "SELECT lastname, firstname FROM guestlist WHERE userid = $userID";
-		 foreach ($db->query($query) as $row) {
-			 echo '<tr>';
-			 echo '<td>'.$row['lastname'].'</td>';
-			 echo '<td>'.$row['firstname'].'</td>';
-			 echo '<td><input type="checkbox" class="inviteCheck"></td>';
-			 echo '</tr>';
-		 }
-		 echo '</table>';
+//		 $query = "SELECT lastname, firstname FROM guestlist WHERE userid = $userID";
+//		 foreach ($db->query($query) as $row) {
+//			 echo '<tr>';
+//			 echo '<td>'.$row['lastname'].'</td>';
+//			 echo '<td>'.$row['firstname'].'</td>';
+//			 echo '<td><input type="checkbox" class="inviteCheck"></td>';
+//			 echo '</tr>';
+//		 }
+//		 echo '</table>';
 	  ?>
 	  
 	  <input type="button" value="Invite Guests">
