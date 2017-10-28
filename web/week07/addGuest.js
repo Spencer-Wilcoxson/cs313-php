@@ -12,15 +12,17 @@ function showGuest() {
 			var firstNameNode = document.createTextNode("First Name");
 			var addBoxNode = document.createTextNode("Add Guest");
 			
+			div.appendChild(firstNameNode);
+			
 			// add the table headers
-			th.appendChild(lastNameNode);
-			th.appendChild(firstNameNode);
-			th.appendChild(addBoxNode);
+//			th.appendChild(lastNameNode);
+//			th.appendChild(firstNameNode);
+//			th.appendChild(addBoxNode);
 			
 			// add the headers to the table
-			table.appendChild(th);
+//			table.appendChild(th);
 			
-			document.getElementById("addGuestList").appendChild(table);
+//			div.appendChild(table);
 			
 			
 			
