@@ -1,13 +1,13 @@
 <?php
-   require 'dbconnect.php';
-   connect();
+//   require 'dbconnect.php';
+//   connect();
    
    /*
    * Get a list of guests to invite and add it to the guestlist
    */
    
-   $db = $GLOBALS['db'];
-   $userID = $_SESSION['userID'];
+//   $db = $GLOBALS['db'];
+//   $userID = $_SESSION['userID'];
 //   $a = array();
    
    class guest {
