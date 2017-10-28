@@ -17,10 +17,5 @@
    
    $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
-   foreach (($db->query($query) as $row) {
-//	   array_push($a, $row);
-       $a = "whats up";
-   }
-   
    echo "HELLO";
 ?>
