@@ -7,10 +7,6 @@
    $db = $GLOBALS['db'];
    $userID = $_SESSION['userID'];
    
-   
-//   $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
-   
-//   echo '<table> <tr> <th>Last Name</th> <th>First Name</th> <th>Invite</th></tr></table>';
    echo '<table ID="guestList">';
    echo '<tr>';
    echo '<th>Last Name</th>';

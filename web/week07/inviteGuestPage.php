@@ -15,6 +15,9 @@
 	  <?php
 	     require 'inviteList.php';
 	  ?>
+	  
+	  <div id="temp">
+	  </div>
 	 
 	  <input type="button" value="Invite Guests" onclick="addGuest()">
    </body>
