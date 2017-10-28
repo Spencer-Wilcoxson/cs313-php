@@ -14,6 +14,7 @@
 	  <input type="button" value="Test Button" onclick="showGuest()">
 	  
 	  <?php
+	     require 'inviteList.php';
 //	     require 'inviteList.php';
 //	     require 'dbconnect.php';
 //		 connect();
