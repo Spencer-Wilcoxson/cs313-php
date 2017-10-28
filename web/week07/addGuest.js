@@ -10,7 +10,7 @@ function showGuest() {
 				
 			}
 			
-			document.getElementById("addGuestList").innerHTML = results.length;
+			document.getElementById("addGuestList").innerHTML = "Hello";
 		}
 	};
 	
