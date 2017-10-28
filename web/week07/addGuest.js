@@ -5,12 +5,12 @@ function showGuest() {
 		if (this.readyState == 4 && this.status == 200) {
 			var results = JSON.parse(this.responseText);
 //			document.getElementById("addGuestList").innerHTML = results.length;
-			
+			var j = 0;
 			for (var i = 0; i < results.length; i++) {
-				
+				j++;
 			}
 			
-			document.getElementById("addGuestList").innerHTML = "Hello";
+			document.getElementById("addGuestList").innerHTML = j;
 		}
 	};
 	
