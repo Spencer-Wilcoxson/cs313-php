@@ -14,7 +14,11 @@
    
    foreach ($obj as $item) {
 	   $getGuestQuery = "SELECT * FROM guestlist WHERE lastname = '$item->lastname' AND firstname = '$item->firstname'";
-	   $guestId = $item['id'];
+	   
+	   foreach(($db->query($getGuestQuery)) as $row) {
+	   
+	      $guestId = $row['id'];
+	   }
 	   
 	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, $guestId, $userID)";
 	   
