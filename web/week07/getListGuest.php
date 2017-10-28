@@ -8,7 +8,7 @@
    
    $db = $GLOBALS['db'];
    $userID = $_SESSION['userID'];
-   $a = array();
+//   $a = array();
    
    class guest {
 	   $lastname = null;
