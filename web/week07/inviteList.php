@@ -10,7 +10,14 @@
    
    $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
-   echo '<table> <tr> <th>Last Name</th> <th>First Name</th> <th>Invite</th></tr></table>';
+//   echo '<table> <tr> <th>Last Name</th> <th>First Name</th> <th>Invite</th></tr></table>';
+   echo '<table>';
+   echo '<tr>';
+   echo '<th>Last Name</th>';
+   echo '<th>First Name</th>';
+   echo '<th>Invite</th>';
+   echo '</tr>';
+   echo '</table>';
    foreach (($db->query($query) as $row) {
    }
 ?>

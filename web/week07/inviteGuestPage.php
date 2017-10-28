@@ -11,7 +11,6 @@
    <body>
       <h1>Invite Guests</h1>
 	  <p>Select Guests below to add to the guest list for an event, or add a new guest below</p>
-	  <input type="button" value="Test Button" onclick="showGuest()">
 	  
 	  <?php
 	     require 'inviteList.php';
@@ -42,5 +41,7 @@
 	  <div id="addGuestList">
 	  
 	  </div>
+	  
+	  <input type="button" value="Invite Guests">
    </body>
 </html>
