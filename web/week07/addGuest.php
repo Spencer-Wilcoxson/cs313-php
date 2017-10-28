@@ -7,7 +7,7 @@
    
    connect();
    
-   $userid = $_SESSION['userID'];
+   $userID = $_SESSION["userID"];
    $db = $GLOBALS['db'];
    
    $obj = json_decode($_POST['guests'], false);
@@ -21,7 +21,7 @@
 	      $guestId = $row['id'];
 	   }
 	   
-	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, 9, userid)";
+	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, 9, $userID)";
 	   
 	   $db->query($query);
 	   
