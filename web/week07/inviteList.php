@@ -9,6 +9,7 @@
    
    echo '<table ID="guestList">';
    echo '<tr>';
+   echo '<th>Id</th>';
    echo '<th>Last Name</th>';
    echo '<th>First Name</th>';
    echo '<th>Invite</th>';
