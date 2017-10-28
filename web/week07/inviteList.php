@@ -15,7 +15,7 @@
    
 //   $a = array();
    
-   $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
+   $query = "SELECT lastname, firstname FROM guestList";
    $results = $db->query($query);
    
    $results = json_encode($results);
