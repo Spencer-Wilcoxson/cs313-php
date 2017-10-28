@@ -1,4 +1,15 @@
 function showGuest() {
 	var xhttp = new XMLHttpRequest();
-	document.getElementById("addGuestList").innerHTML = "Hello?";
+	
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("addGuestList").innerHTML = "HELLO?";
+		}
+	};
+	
+	// send the request
+	xhttp.open("POST", "test.php", true);
+	xhttp.send();
+	// 
+//	document.getElementById("addGuestList").innerHTML = "Hello?";
 }
