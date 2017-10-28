@@ -8,7 +8,7 @@ function showGuest() {
 	};
 	
 	// send the request
-	xhttp.open("POST", "test.php", true);
+	xhttp.open("POST", "getListGuest.php", true);
 	xhttp.send();
 	// 
 //	document.getElementById("addGuestList").innerHTML = "Hello?";
