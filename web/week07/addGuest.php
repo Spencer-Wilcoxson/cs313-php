@@ -12,8 +12,8 @@
    
    $obj = json_decode($_POST['guests'], false);
    
-   for ($i = 0; $i < $obj.count(); $i++) {
-	   $getGuestQuery = "SELECT * FROM guestlist WHERE lastname = '$obj[i]->lastname' AND firstname = '$obj[i]->firstname'";
+   foreach ($obj as $item) {
+	   $getGuestQuery = "SELECT * FROM guestlist WHERE lastname = '$item->lastname' AND firstname = '$item->firstname'";
 	   
 	   
 	   foreach(($db->query($getGuestQuery)) as $row) {
