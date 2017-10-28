@@ -15,15 +15,15 @@
    
    //$a = array();
    
-   $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
+ //  $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
-   foreach (($db->query($query) as $row) {
-	   $obj = new guest();
-	   $obj->lastname = $row['lastname'];
-	   $obj->firstname = $row['firstname'];
+ //  foreach (($db->query($query) as $row) {
+//	   $obj = new guest();
+//	   $obj->lastname = $row['lastname'];
+//	   $obj->firstname = $row['firstname'];
 	   
 	  // array_push($a, $obj);
-   }
+//   }
    
    echo "HELLO";
 ?>
