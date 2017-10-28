@@ -42,7 +42,5 @@
 	  <div id="addGuestList">
 	  
 	  </div>
-	  
-	  <input type="button" value="Invite Guests">
    </body>
 </html>
