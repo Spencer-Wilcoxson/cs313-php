@@ -5,7 +5,6 @@
    connect();
    
    $db = $GLOBALS['db'];
-   %userID = $_SESSION['userID'];
-   
+   $userID = $_SESSION['userID'];
    echo "HELLO";
 ?>
