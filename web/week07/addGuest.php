@@ -21,7 +21,7 @@
 	      $guestId = $row['id'];
 	   }
 	   
-	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, $guestId, userid)";
+	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, 9, userid)";
 	   
 	   $db->query($query);
 	   
