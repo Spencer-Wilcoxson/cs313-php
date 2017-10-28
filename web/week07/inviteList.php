@@ -4,6 +4,11 @@
    require "dbconnect.php";
    connect();
    
+//   public class guest {
+//	   $lastname = null;
+//	   $firstname = null;
+//   }
+   
    
    $db = $GLOBALS['db'];
    $userID = $_SESSION['userID'];
