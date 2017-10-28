@@ -14,9 +14,10 @@
    echo '<th>Invite</th>';
    echo '</tr>';
    
-   $query = "SELECT lastname, firstname FROM guestlist WHERE userid = $userID";
+   $query = "SELECT id, lastname, firstname FROM guestlist WHERE userid = $userID";
    foreach ($db->query($query) as $row) {
       echo '<tr>';
+	  echo '<td>'.$row['id'].'</td>';
 	  echo '<td>'.$row['lastname'].'</td>';
 	  echo '<td>'.$row['firstname'].'</td>';
 	  echo '<td><input type="checkbox" class="inviteCheck" name="check"></td>';
