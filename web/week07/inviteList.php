@@ -16,6 +16,7 @@
 //   $a = array();
    
    $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
+   $results = $db->query($query);
    
    echo "HELLO";
 ?>
