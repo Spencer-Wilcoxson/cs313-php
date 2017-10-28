@@ -13,12 +13,12 @@
    $db = $GLOBALS['db'];
    $userID = $_SESSION['userID'];
    
-   $a = array();
+//   $a = array();
    
    $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
    foreach (($db->query($query) as $row) {
-	   array_push($a, $row);
+//	   array_push($a, $row);
    }
    
    echo "HELLO";
