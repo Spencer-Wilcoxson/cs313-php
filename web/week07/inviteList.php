@@ -1,3 +1,5 @@
 <?php
-   echo "hello";
+   require "dbconnect.php";
+   connect();
+   echo "Hello";
 ?>
