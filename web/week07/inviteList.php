@@ -13,7 +13,7 @@
    $db = $GLOBALS['db'];
    $userID = $_SESSION['userID'];
    
-   $a = array();
+   //$a = array();
    
    $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
@@ -22,7 +22,7 @@
 	   $obj->lastname = $row['lastname'];
 	   $obj->firstname = $row['firstname'];
 	   
-	   array_push($a, $obj);
+	  // array_push($a, $obj);
    }
    
    echo "HELLO";
