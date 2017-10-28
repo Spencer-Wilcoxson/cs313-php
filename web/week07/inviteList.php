@@ -11,7 +11,7 @@
 //   $query = "SELECT lastname, firstname FROM guestList WHERE userid = $userID";
    
 //   echo '<table> <tr> <th>Last Name</th> <th>First Name</th> <th>Invite</th></tr></table>';
-   echo '<table>';
+   echo '<table ID="guestList">';
    echo '<tr>';
    echo '<th>Last Name</th>';
    echo '<th>First Name</th>';
@@ -23,7 +23,7 @@
       echo '<tr>';
 	  echo '<td>'.$row['lastname'].'</td>';
 	  echo '<td>'.$row['firstname'].'</td>';
-	  echo '<td><input type="checkbox" class="inviteCheck"></td>';
+	  echo '<td><input type="checkbox" class="inviteCheck" name="check"></td>';
 	  echo '</tr>';
    }
    echo '</table>';
