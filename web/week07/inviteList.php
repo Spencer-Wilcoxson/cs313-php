@@ -17,7 +17,6 @@
    echo '<th>First Name</th>';
    echo '<th>Invite</th>';
    echo '</tr>';
-   echo '</table>';
    
    $query = "SELECT lastname, firstname FROM guestlist WHERE userid = $userID";
    foreach ($db->query($query) as $row) {
