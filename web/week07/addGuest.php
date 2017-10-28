@@ -15,6 +15,8 @@
    foreach ($obj as $item) {
 	   $getGuestQuery = "SELECT * FROM guestlist WHERE lastname = '$item->lastname' AND firstname = '$item->firstname'";
 	   
+	   $guestId;
+	   
 	   foreach(($db->query($getGuestQuery)) as $row) {
 	   
 	      $guestId = $row['id'];
