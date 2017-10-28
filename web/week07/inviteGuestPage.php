@@ -5,6 +5,7 @@
 <html>
    <head>
       <title>Invite Guests</title>
+	  <script src="addGuest.js"></script>
    </head>
    
    <body>
