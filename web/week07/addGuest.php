@@ -13,18 +13,7 @@
    $obj = json_decode($_POST['guests'], false);
    
    foreach ($obj as $item) {
-//	   $getGuestQuery = "SELECT id FROM guestlist WHERE lastname = '$item->lastname' AND firstname = '$item->firstname'";
-	   
-//	   $guestId = $db->query($getGuestQuery);
-	   
-//	   foreach(($db->query($getGuestQuery)) as $row) {
-//	   
-//	      $guestId = $row['id'];
-//	   }
-	   
 	   $query = "INSERT INTO junction (eventsid, guestid, userid) VALUES (5, $item->id, $userID)";
-	   
-	   $db->query($query);
-	   
+	   $db->query($query); 
    }
 ?>

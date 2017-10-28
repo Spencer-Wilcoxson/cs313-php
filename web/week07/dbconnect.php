@@ -135,4 +135,19 @@
 	  $query = "INSERT INTO users (username, password) VALUES ('$username', '$pass')";
 	  $db->query($query);
   }
+  
+  function insertUser() {
+	  $db = $GLOBALS['db'];
+	  $userID = $_SESSION['userID'];
+	  
+	  $lastname = $_POST['lastName'];
+	  $firstname = $_POST['firstName'];
+	  $email = $_POST['email'];
+	  $number = $_POST['phoneNumber'];
+	  
+	  $query = "INSERT INTO guestList (lastname, firstname, number, email, userid) VALUES ('$lastname', '$firstname', $number, $email, $userID)";
+	  
+	  $db->query($query);
+	  
+  }
 ?>

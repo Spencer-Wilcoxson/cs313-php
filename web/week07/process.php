@@ -21,6 +21,10 @@
 	   addUser();
    }
    
+   elseif ($_POST['whatPage'] == 'addGuestPage') {
+	   createGuest();
+   }
+   
    /* redirect to the login screen */
    header("Location: login.php");
    exit;
@@ -66,5 +70,9 @@
    
    function addUser() {
 	   insertUser($_POST['userName'], $_POST['pass']);
+   }
+   
+   function createGuest() {
+	   insertUser();
    }
 ?>
