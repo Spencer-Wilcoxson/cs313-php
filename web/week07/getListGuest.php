@@ -26,7 +26,7 @@
    
    $query = "SELECT * FROM guestlist WHERE userid = $userID";
     foreach ($db->query($query) as $row) {
-		// push a new guest object anot the array
+		// push a new guest object on to the array
 		array_push($a, new guest("$row['lastname']", "$row['firstname']", $row['number'], "$row['email']" ));
 	}
 	

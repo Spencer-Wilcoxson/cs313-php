@@ -33,7 +33,7 @@ function showGuest() {
 		}
 	};
 	
-	xhttp.open("POST", "getListGuest.php", true);
+	xhttp.open("GET", "getListGuest.php", true);
 	xhttp.send();
 	
 }
