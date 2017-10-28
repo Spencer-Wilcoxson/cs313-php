@@ -1,5 +1,9 @@
 <?php
    require "dbconnect.php";
    connect();
-   echo "Hello";
+   
+   $db = $GLOBALS['db'];
+   %userID = $_SESSION['userID'];
+   
+   echo "HELLO";
 ?>
