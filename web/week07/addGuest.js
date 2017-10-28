@@ -12,6 +12,7 @@ function addGuest() {
 		}
 	}
 	
+	// send this object in our send
 	var json = JSON.stringify(guests);
 	
 	var xhttp = new XMLHttpRequest();
@@ -24,7 +25,7 @@ function addGuest() {
 	
 	xhttp.open("POST", "addGuest.php", true);
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xhttp.send("guests=" + guests);
+	xhttp.send("guests=" + json);
 }
 
 function createGuest(lastName, firstName) {
