@@ -145,7 +145,7 @@
 	  $email = $_POST['email'];
 	  $number = $_POST['phoneNumber'];
 	  
-	  $query = "INSERT INTO guestList (lastname, firstname, number, email, userid) VALUES ('$lastname', '$firstname', $number, $email, $userID)";
+	  $query = "INSERT INTO guestList (lastname, firstname, number, userid) VALUES ('$lastname', '$firstname', $number, $userID)";
 	  
 	  $db->query($query);
 	  
