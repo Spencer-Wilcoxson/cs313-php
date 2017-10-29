@@ -21,12 +21,13 @@
 	 
 	  <input type="button" value="Invite Guests" onclick="addGuest()">
 	  
+	  <p>Or add a new guest below!</p>
 	  <form method="Post" action="process.php">
-	     <input type="text" placeholder="Last Name" name="lastName">
-		 <input type="text" placeholder="First Name" name="firstName">
-		 <input type="text" placeholder = "Phone Number" name="phoneNumber">
-		 <input type="text" placeholder = "Email" name="email">
-		 <input type="hidden" name="whatPage" value="addGuestPage">
+	     <input type="text" placeholder="Last Name" name="lastName"> <br />
+		 <input type="text" placeholder="First Name" name="firstName"> <br />
+		 <input type="text" placeholder = "Phone Number" name="phoneNumber"> <br />
+		 <input type="text" placeholder = "Email" name="email"> <br />
+		 <input type="hidden" name="whatPage" value="addGuestPage"> 
 		 <input type="submit" value="Submit">
 	  </form>
    </body>
