@@ -136,7 +136,7 @@
 	  $db->query($query);
   }
   
-  function insertUser() {
+  function insertGuest() {
 	  $db = $GLOBALS['db'];
 	  $userID = $_SESSION['userID'];
 	  
