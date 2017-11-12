@@ -4,13 +4,14 @@
   "description": "Week09",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "USPS"
   ],
   "author": "Spencer A. Wilcoxson",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",

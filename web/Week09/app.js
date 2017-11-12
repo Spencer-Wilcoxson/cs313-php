@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 	res.render('week09');
 });
 
-app.listen(3000, () => console.log('Example is running'));
+app.listen(process.env.PORT || 3000, () => console.log('Example is running'));
 
 app.post('/results', function (req, res) {
 	var weight = req.body.weight;
