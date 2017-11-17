@@ -24,7 +24,7 @@
    }
    
    function query() {
-	   $q = "SELECT data FROM testData";
+	   $q = "SELECT * FROM testData";
 	   $db = _SESSION['db'];
 	   
 	   echo "Hello World";
