@@ -9,7 +9,7 @@
    <?php
       require "queryDB.php";
 	  isConnected();
-	  echo query();
+	  query();
    ?>
    </body>
 </html>

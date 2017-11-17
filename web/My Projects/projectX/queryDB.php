@@ -27,9 +27,9 @@
 	   $q = "SELECT data FROM testData";
 	   $db = _SESSION['db'];
 	   
+	   echo "Hello World";
 	   foreach ($db->query($q) as $row) {
 	   echo $row['data'];
-	   echo "??";
 	   }
    }
 ?>
