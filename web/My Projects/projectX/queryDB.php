@@ -29,6 +29,7 @@
 	   
 	   foreach ($db->query($q) as $row) {
 	   echo $row['data'];
+	   echo "??";
 	   }
    }
 ?>
