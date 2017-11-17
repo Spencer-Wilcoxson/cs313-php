@@ -25,9 +25,8 @@
    
    function query() {
 	   $q = "SELECT * FROM testData";
-	   $db = _SESSION['db'];
+	   $db = $_SESSION['db'];
 	   
-	   echo "Hello World";
 	   foreach ($db->query($q) as $row) {
 	   echo $row['data'];
 	   }
