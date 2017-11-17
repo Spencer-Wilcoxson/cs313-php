@@ -24,10 +24,10 @@
    }
    
    function query() {
-	   $query = "SELECT data FROM testData";
+	   $q = "SELECT data FROM testData";
 	   $db = _SESSION['db'];
 	   
-	   foreach ($db->query($query) as $row) {
+	   foreach ($db->query($q) as $row) {
 	   echo "$row['data']";
 	   }
    }
