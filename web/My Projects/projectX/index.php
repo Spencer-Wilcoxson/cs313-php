@@ -6,5 +6,9 @@
    
    <body>
    <p>This is just a test</p>
+   <?php
+      require "queryDB.php";
+	  isConnected();
+   ?>
    </body>
 </html>
