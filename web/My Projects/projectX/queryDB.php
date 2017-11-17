@@ -28,7 +28,7 @@
 	   $db = _SESSION['db'];
 	   
 	   foreach ($db->query($q) as $row) {
-	   echo "$row['data']";
+	   echo "$row[data]";
 	   }
    }
 ?>
