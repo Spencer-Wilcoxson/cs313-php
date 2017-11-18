@@ -36,8 +36,10 @@
 	   $query = "SELECT * FROM testData";
 	   $db = $_SESSION['db'];
 	   
-	   $results = $db->query($query);
-	   $results = json_encode($results);
-	   echo $results;
+	   $statment = $db->query($query);
+	   
+	   $results = $statment->fetchAll();
+	   $code = json_encode($results);
+	   echo $code;
    }
 ?>
