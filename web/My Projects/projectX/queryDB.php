@@ -38,8 +38,11 @@
 	   $myObj->name = 'john';
 	   $myObj->age = 24;
 	   
-	   //$data = $db->query($q);
-	   $json = json_encode($myObj);
+	   $statement = $db->prepare($q);
+	   $statement->execute();
+	   $results = $statement->fetchAll(PDO::_ASSOC);
+	   $json = json_encode($results);
 	   echo $json;
+	   //$data = $db->query($q);
    }
 ?>
