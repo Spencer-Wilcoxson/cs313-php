@@ -31,4 +31,13 @@
 	   echo $row['data'];
 	   }
    }
+   
+   function JSON() {
+	   $q = "SELECT * FROM testData";
+	   $db = $_SESSION['db'];
+	   
+	   $data = $db->query($q);
+	   $json = json_encode($data);
+	   echo $data;
+   }
 ?>
