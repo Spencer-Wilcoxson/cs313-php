@@ -38,7 +38,7 @@
 	   
 	   $statment = $db->query($query);
 	   
-	   $results = $statment->fetchAll();
+	   $results = $statment->fetchAll(PDO::FETCH_ASSOC);
 	   $code = json_encode($results);
 	   print_r($code);
    }
