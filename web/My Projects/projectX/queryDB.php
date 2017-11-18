@@ -35,9 +35,11 @@
    function JSON() {
 	   $q = "SELECT * FROM testData";
 	   $db = $_SESSION['db'];
+	   $myObj->name = 'john';
+	   $myObj->age = 24;
 	   
-	   $data = $db->query($q);
-	   $json = json_encode($data);
+	   //$data = $db->query($q);
+	   $json = json_encode($myObj);
 	   echo $json;
    }
 ?>
