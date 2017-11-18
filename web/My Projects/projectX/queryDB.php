@@ -38,6 +38,6 @@
 	   
 	   $data = $db->query($q);
 	   $json = json_encode($data);
-	   echo $data;
+	   echo $json;
    }
 ?>
