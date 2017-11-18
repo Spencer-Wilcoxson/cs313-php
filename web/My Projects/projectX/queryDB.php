@@ -40,6 +40,6 @@
 	   
 	   $results = $statment->fetchAll();
 	   $code = json_encode($results);
-	   echo $code;
+	   print_r($code);
    }
 ?>
