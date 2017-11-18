@@ -35,12 +35,17 @@
    function JSON() {
 	   $q = "SELECT * FROM testData";
 	   $db = $_SESSION['db'];
-	   $myObj->name = 'john';
-	   $myObj->age = 24;
 	   
-	   foreach ($db->query($q) as $row) {
-		   echo $row['data'];
-	   }
+	   // prepare the pdo statement and execute it
+	   $pdoStmt = $db->prepare($q);
+	   $pdoStmt->exectue();
+
+	   // get all of the results
+	   $resutls = $pdoStmt->fetchAll();
+	   
+	   // display the results
+	   $j = json_encode($results);
+	   echo $j;
 	   //$data = $db->query($q);
    }
 ?>
