@@ -37,6 +37,7 @@
 	   $db = $_SESSION['db'];
 	   
 	   $results = $db->query($query);
+	   $results = json_encode($results);
 	   echo $results;
    }
 ?>
